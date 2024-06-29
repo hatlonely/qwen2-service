@@ -12,6 +12,3 @@ RUN pip install transformers -U
 RUN pip install torch
 RUN pip install accelerate
 RUN pip install vllm
-
-
-
