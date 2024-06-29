@@ -18,4 +18,7 @@ dev-env:
 
 .PHONY: run
 run:
-	docker run --rm --name $(APP_NAME)-dev -p 8000:8000 docker.io/library/$(APP_NAME)
+	docker run --rm --name $(APP_NAME)-dev \
+		--gpus all \
+		-p 8000:8000 \
+		docker.io/library/$(APP_NAME)
